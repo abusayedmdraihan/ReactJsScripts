@@ -1,4 +1,4 @@
 module.exports = async function(context, commands) {
-  await commands.navigate('https://www.google.com');
-  // We will get here when the action is finished since we use await
+    await commands.measure.start('https://www.youtube.com/');
+    return commands.measure.start('https://www.facebook.com/');
 }
